@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Добро пожаловать на форум!</h1>
-    <p><a href="/thread/1">Перейти к первой теме</a></p>
+    <header>
+        <h1>Добро пожаловать на форум!</h1>
+    </header>
+    
+    <main>
+        <div class="forum-list">
+            <div class="forum-item">
+                <h2><a href="/thread/1">Тема 1: Обсуждаем всё!</a></h2>
+                <p>Здесь можно обсудить абсолютно всё!</p>
+            </div>
+            <div class="forum-item">
+                <h2><a href="/thread/2">Тема 2: Технологии будущего</a></h2>
+                <p>Давайте поговорим о новых технологиях и будущем!</p>
+            </div>
+            <div class="forum-item">
+                <h2><a href="/thread/3">Тема 3: Графический дизайн</a></h2>
+                <p>Обсуждаем дизайн, арт, графику и многое другое.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Форум. Все права защищены.</p>
+    </footer>
 </body>
 </html>

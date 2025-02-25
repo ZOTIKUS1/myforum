@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема форума</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Тема форума</h1>
+    </header>
+    
+    <main>
+        <div class="thread-content">
+            <h2>Название темы: {{ topic_name }}</h2>
+            <p>Описание темы: {{ topic_description }}</p>
+
+            <div class="posts">
+                <div class="post">
+                    <p><strong>Пользователь 1:</strong> Привет! Как думаете, какие технологии будут развиваться в будущем?</p>
+                </div>
+                <div class="post">
+                    <p><strong>Пользователь 2:</strong> Я думаю, что искусственный интеллект – это будущее!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Форум. Все права защищены.</p>
+    </footer>
+</body>
+</html>
